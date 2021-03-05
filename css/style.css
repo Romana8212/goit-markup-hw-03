@@ -78,6 +78,7 @@ image {
   background: var(--accent-color);
 }
 
+
 .title {
   font-family:'Roboto';
   font-weight: 700;
@@ -89,7 +90,7 @@ image {
 }
 
 .subtitle {
-  font-family: var(--main-font);
+  font-family:'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
@@ -99,7 +100,7 @@ image {
 }
 
 .description {
-  font-family: var(--main-font);
+  font-family:'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.187;
@@ -200,7 +201,7 @@ header {
   padding-left: 252px;
 }
 
-.hero__title {
+.hero-title {
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
