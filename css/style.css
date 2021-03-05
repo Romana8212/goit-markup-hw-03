@@ -6,8 +6,10 @@
 }
 
 body {
-  font-family: var(--main-font);
+  max-width: 1600px;
+  background-color: var(--white-text);
 }
+
 
 .list {
   list-style: none;
@@ -38,6 +40,8 @@ p {
 
 image {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .address {
@@ -53,7 +57,7 @@ image {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  min-width: 1600px;
+  
 }
 
 /*  COMPONENTS */
@@ -75,7 +79,7 @@ image {
 }
 
 .title {
-  font-family: var(--main-font);
+  font-family:'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -110,7 +114,6 @@ image {
 header {
   padding-top: 24px;
   padding-bottom: 25px;
-  min-width: 1600px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -119,14 +122,18 @@ header {
   align-items: center;
 }
 
-.company__logo {
-  font-family: var(--secondary-font);
-  font-weight: 700;
+.company-logo {
+  font-family: Raleway;
+  font-weight: bold;
   font-size: 26px;
   line-height: 1.193;
   letter-spacing: 0.03em;
-  margin-right: 93px;
-  margin-left: 0px;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  margin-bottom: 25px;
+  margin-top: 24px;
 }
 
 .navigation {
@@ -145,7 +152,7 @@ header {
 .navigation__list-link,
 .header__mail,
 .header__tel {
-  font-family: var(--main-font);
+  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -180,7 +187,7 @@ header {
 /*  HERO */
 .hero {
   background: #2f303a;
-  min-width: 1600px;
+  
 }
 
 .hero .container {
@@ -194,7 +201,7 @@ header {
 }
 
 .hero__title {
-  font-family: var(--main-font);
+  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -207,7 +214,7 @@ header {
 }
 
 .modal-btn {
-  font-family: var(--main-font);
+  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -247,7 +254,7 @@ header {
 }
 
 .feature__item-title {
-  font-family: var(--main-font);
+  font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -258,7 +265,7 @@ header {
 }
 
 .feature__item-description {
-  font-family: var(--main-font);
+  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.715;
@@ -328,7 +335,6 @@ header {
 .footer {
   background: #2f303a;
   padding: 60px 0px;
-  min-width: 1600px;
 }
 
 .footer .company__logo {
@@ -349,7 +355,7 @@ header {
 .contact-list__description,
 .footer-mail__link,
 .footer-tel__link {
-  font-family: var(--main-font);
+  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -359,8 +365,13 @@ header {
   margin-right: 0px;
 }
 
-.footer-mail__link,
-.footer-tel__link {
+.footer-address-mail,
+.footer-address-tel {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.715;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -384,7 +395,9 @@ header {
 }
 
 .filters__modal-btn {
-  font-family: var(--main-font);
+  .footer-address-mail,
+.footer-address-tel {
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 2;
@@ -453,4 +466,4 @@ header {
 
 /*  END PROJECTS */
 
-/* =============== END PORTFOLIO =============== */
+/*END PORTFOLIO */
