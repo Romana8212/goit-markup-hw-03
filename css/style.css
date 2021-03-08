@@ -112,76 +112,88 @@ image {
 
 /*  INDEX  */
 /*  HEADER */
-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+.header {
+  background-color: var(--white-text);
   border-bottom: 1px solid #ececec;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
 
-.header .container {
+  align-items: center;
+  text-align: center;
+  padding: 24px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-link {
   display: flex;
   align-items: center;
 }
-
-.company-logo {
-  font-family: Raleway;
-  font-weight: bold;
+.ul-link {
+  display: flex;
+}
+.logo-web {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--blue-text);
   font-size: 26px;
-  line-height: 1.193;
+  letter-spacing: 0.03;
+  line-height: 1.15;
+}
+.logo-studio {
+  padding-right: 43px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--black-dark-text);
+  font-size: 26px;
+  letter-spacing: 0.03;
+  line-height: 1.15;
+}
+.logo-studio-white {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--white-text);
+  font-size: 26px;
   letter-spacing: 0.03em;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  margin-bottom: 25px;
-  margin-top: 24px;
 }
-
-.navigation {
-  display: flex;
-  align-items: center;
-  min-width: 294px;
+.active .nav-logo {
+  color: var(--blue-text);
 }
-
-.navigation__list {
-  display: flex;
-}
-
-.navigation__list-item:not(:last-child) {
-  margin-right: 50px;
-}
-.navigation__list-link,
-.header__mail,
-.header__tel {
-  font-family: Roboto;
-  font-weight: 500;
+.nav-logo {
+  padding-left: 50px;
+  font-family: "roboto";
   font-size: 14px;
-  line-height: 1.143;
+  font-weight: 500;
+  color: var(--black-text);
   letter-spacing: 0.02em;
 }
-
-.navigation__list-link {
-  color: #212121;
+.nav-contacts:hover {
+  color: var(--blue-text);
 }
-
-.header .address {
+.nav-contacts {
   display: flex;
+  padding-left: 50px;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-text);
+  letter-spacing: 0.02em;
+  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: 0px;
+}
+.svg-contacts {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-.contact-list {
-  display: flex;
-}
-
-.header__mail {
-  margin-right: 50px;
-}
-.header__mail,
-.header__tel {
-  color: #757575;
-}
 
 /*  END HEADER  */
 
@@ -334,46 +346,43 @@ header {
 
 /* footer */
 .footer {
-  background: #2f303a;
-  padding: 60px 0px;
+  background-color: var(--dark-grey-bac);
 }
-
-.footer .company__logo {
-  margin-right: 0px;
-}
-
-.footer .contact-list {
-  display: flex;
-  flex-direction: column;
-  width: 231px;
-  margin-top: 20px;
-}
-
-.footer .contact-list__item:not(:first-child) {
-  margin-top: 9px;
-}
-
-.contact-list__description,
-.footer-mail__link,
-.footer-tel__link {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+.containers-footer {
+  padding: 60px 0;
+  max-width: 1200px;
   margin-left: auto;
-  margin-right: 0px;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-.footer-address-mail,
-.footer-address-tel {
-  font-family: Roboto;
-  font-weight: 400;
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.map {
+  display: inline-block;
+  margin-bottom: 9px;
+  font-family: "roboto";
   font-size: 14px;
-  line-height: 1.715;
+  font-weight: 400;
+  color: var(--white-text);
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+}
+.footer-address {
+  display: inline-block;
+  margin-bottom: 9px;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grey-text-op60);
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+.address {
+  font-style: normal;
 }
 
 /* END FOOTER */
@@ -396,8 +405,6 @@ header {
 }
 
 .filters__modal-btn {
-  .footer-address-mail,
-.footer-address-tel {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;

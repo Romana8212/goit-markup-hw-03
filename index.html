@@ -7,45 +7,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <!-- Шапка сайта -->
+    <!-- Шапка  з навігацією -->
     <!-- Header -->
     <header class="header">
-      <div class="container">
-        <a href="./index.html" class="company__logo link">Web<span style="color: rgb(3, 3, 3);">Studio</span></a>
-      
+      <div class="nav">
+        <nav class="nav-link"><a href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
 
     <!-- Navigation -->
-    <nav class="navigation">
-      <ul class="navigation__list list">
-       <li class="navigation__list-item">
-        <a class="navigation__list-link link" style="color: #2196f3" href="./index.html">Студія</a>
-       </li>
-      <li class="navigation__list-item">
-       <a class="navigation__list-link link" href="./portfolio.html">Портфоліо</a>
-      </li>
-      <li class="navigation__list-item">
-       <a class="navigation__list-link link" href="#Контакты">Контакти</a>
-      </li>
+    <ul class="ul-link">
+      <li><a class="active" href="./index.html">
+      <span class="nav-logo">Студія</span></a></li>
+      
+      <li>
+      <a  href="./portfolio.html">
+      <span class="nav-logo">Портфоліо</span></a></li>
+       <!-- Address -->
+      <li><a href="#contacts">
+      <span class="nav-logo">Контакти</span></a></li>
       </ul>
       </nav>
       
-        
-        <!-- Address -->
-<address class="address">
-  <ul class="contact-list list">
-    <li class="contact-list__item">
-     <a class="header__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-    </li>
-    <li class="contact-list__item">
-     <a class="header__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-    </li>
-  </ul>
-  </address>
-  </div>
-  </header>
+      <ul class="ul-link">
+      
+      <li>
+      <a class="nav-contacts" href="mailto:Info@exampie.com">
+      <svg class="svg-contacts" width="16" height="12">
+      <use href="./images/icons.svg#icon-mail"></use>
+      </svg>info@devstudio.com
+      </a>
+      </li>
+      
+      <li>
+      <a class="nav-contacts" href="tel:+380991111111">
+      <svg class="svg-contacts" width="10" height="16">
+      <use  href="./images/icons.svg#icon-smartphone"></use>
+      </svg> +38 099 111 11 11
+      </a>
+      </li>
+      
+      </ul>
+      
+      
+      </div>
+      </header>
+      
   
 
   <!-- Main -->
@@ -159,26 +168,31 @@
     </main>
 
 <!-- Footer -->
+<footer class="footer" id="contacts">
 
-<footer class="footer">
+  <div class="containers-footer">
 
-     <div class="container">
-        <a href="./index.html" class="company-logo link">Web<span style="color: rgb(255, 255, 255);">Studio</span></a>
-      
+      <div class="container-address">
 
-      <address class="address">
-        <ul class="contact-list list">
+          <a class="logo-footer" href="./index.html"><span class="logo-web">Web</span>
+           <span class="logo-studio-white">Studio</span></a>
 
-          <li class="contact-list__item list">
-            <p class="contact-list__description">м.Київ, пр-т Лесі Українки,26</p>
-          </li>
-          <li class="contact-list__item list">
-            <a class="footer-mail__link link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-             <li class="contact-list__item list">
-              <a class="footer-tel__link link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
-        </ul>
-      </address>
-     </div>
-    </footer>
-  </body>
+          <address class="address">
+
+              <span class="map">г. Київ,пр-т Лесі Українки,26</span>
+
+              <ul>
+                  <li><a class="footer-address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                  <li><a class="footer-address" href="tel:+380991111111">+38 099 111 11 11</a></li>
+              </ul>
+
+          </address>
+
+      </div>
+  </div>
+ 
+</footer>
+
+</body>
+
 </html>
