@@ -56,8 +56,8 @@ image {
 }
 
 .section {
-  padding-top: 47px;
-  padding-bottom: 47px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   
  } 
 
@@ -422,7 +422,6 @@ image {
   padding-right: 22px;
   padding-left: 22px;
   margin-right: 8px;
-  margin-bottom: 50px;
 }
 .filters__modal-btn:hover,
 .filters__modal-btn:focus {
@@ -449,6 +448,7 @@ image {
   padding: 0;
   margin: 0;
   list-style: none;
+  max-width: 100%;
 
   display: flex;
   flex-wrap: wrap;
